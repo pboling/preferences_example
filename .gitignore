@@ -1,0 +1,16 @@
+log
+tmp
+log/\*.log
+log/\*.pid
+db/\*.db
+db/*.sql
+db/\*.sqlite3
+tmp/\*\*/\*
+.DS_Store
+doc/api
+doc/app
+.idea
+.idea/\*\*/\*
+.profile
+mkmf.log
+nohup.out
