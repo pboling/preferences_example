@@ -1,0 +1,139 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+site_name:
+  name: Site Name
+  value: Best Ever Website
+  description: The name of the website for title tag
+  begin_at: nil
+  end_at: nil
+  enabled: true
+  available: true
+  updated_by: 1
+
+max_file_size:
+  name: Max File Size
+  value: 10
+  description: Maximum size allowed for file uploads, in megabytes
+  begin_at:
+  end_at:
+  enabled: true
+  available: false
+  updated_by: 1
+
+max_chipmunk_size:
+  name: Max Chipmunk Size
+  value: 25
+  description: Maximum size allowed for chipmunks, in inches
+  begin_at: nil
+  end_at: nil
+  enabled: false
+  available: true
+  updated_by: 1
+
+max_photo_size:
+  name: Max Photo Size
+  value: 5
+  description: Maximum size allowed for photo uploads, in megabytes
+  begin_at: <%= Time.zone.now.beginning_of_day.to_s(:db) %>
+  end_at: <%= Time.zone.now.tomorrow.end_of_day.to_s(:db) %>
+  enabled: true
+  available: true
+  updated_by: 1
+
+cheese_shape:
+  name: Preferred shape of cheese
+  value: round
+  description: Preferred shape of cheese
+  begin_at: <%= Time.zone.now.beginning_of_day.to_s(:db) %>
+  end_at: nil
+  enabled: true
+  available: true
+  updated_by: 1
+
+pie_shape:
+  name: Preferred shape of pie
+  value: triangle
+  description: Preferred shape of pie
+  begin_at: nil
+  end_at: <%= Time.zone.now.tomorrow.beginning_of_day.to_s(:db) %>
+  enabled: true
+  available: true
+  updated_by: 1
+
+max_antler_size:
+  name: Antler Size Maximum
+  value: 9
+  description: Maximum size allowed for antlers, in points
+  begin_at: <%= Time.zone.now.tomorrow.end_of_day.to_s(:db) %>
+  end_at: nil
+  enabled: true
+  available: true
+  updated_by: 1
+
+min_shoe_size:
+  name: Minimum Shoe Size
+  value: 4
+  description: Minimum size allowed for shoes, in US standard
+  begin_at: nil
+  end_at: <%= Time.zone.now.beginning_of_day.to_s(:db) %>
+  enabled: true
+  available: true
+  updated_by: 1
+
+min_hat_size:
+  name: Minimum Hat Size
+  value: 10
+  description: Minimum size allowed for hats, in gallons
+  begin_at: <%= Time.zone.now.beginning_of_day.to_s(:db) %>
+  end_at: <%= Time.zone.now.tomorrow.end_of_day.to_s(:db) %>
+  enabled: false
+  available: true
+  updated_by: 1
+
+min_wallet_size:
+  name: Minimum Wallet Size
+  value: 100
+  description: Minimum size allowed for wallets, in dollars
+  begin_at: <%= Time.zone.now.beginning_of_day.to_s(:db) %>
+  end_at: <%= Time.zone.now.tomorrow.end_of_day.to_s(:db) %>
+  enabled: true
+  available: false
+  updated_by: 1
+
+users_can_login:
+  name: Users Can Login
+  value: nil
+  description: To temporarily turn off user logins
+  begin_at: nil
+  end_at: nil
+  enabled: true
+  available: true
+  updated_by: 1
+
+zebra_color:
+  name: Zebra Color
+  value: black
+  description: What color should zebras be?
+  begin_at: nil
+  end_at: nil
+  enabled: true
+  available: true
+  updated_by: 1
+
+# == Schema Information
+#
+# Table name: preferences
+#
+#  id          :integer         not null, primary key
+#  name        :string(255)     not null
+#  value       :text
+#  description :string(255)
+#  begin_at    :datetime
+#  end_at      :datetime
+#  enabled     :boolean         default(FALSE), not null
+#  available   :boolean         default(FALSE), not null
+#  updated_by  :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
